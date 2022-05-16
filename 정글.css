@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;    
+}
+ul{
+    list-style: none;
+}
+div{
+    display: block;
+}
+#Wrap{
+    width: 100%;
+    height: 100%;
+}
+/* 헤더시작 */
+
+header{
+    width: 100%; 
+    height: 65px;
+    position: fixed;
+    border-bottom: 1px solid black;
+}
+#inner{
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#inner>h1{
+    width: 100px;
+   height: 100%;
+ float: left;  
+}
+#inner>h1>a{
+    vertical-align: middle;
+}
+
+#nav>ul{
+   width: 496px;
+   height: 100%;
+ margin: 0 auto; 
+}
+
+#nav>ul>li{   
+    float: left;
+    margin-left: 50px;
+    padding-top: 20px;
+}
+#login{
+    float: right;
+    width: 100px;
+    height: 100%;
+    margin:26px 45px 0 0;
+}
+#login>ul>li{
+    float: left;
+    font-size: 5px;
+    margin-left: 10px;
+    
+}
+/* 헤더끝 */
+
+/* 본문 시작 */
+
+#main{
+   padding-top: 120px;
+   margin-bottom: 100px;
+}
+#m_inner{
+    width: 1000px;
+  
+    margin: 0 auto;
+}
+#m_inner>h1{
+    width: 200px;
+}
+#text{
+    margin-bottom: 40px;
+}
+#container{
+    width: 100%;
+    height: 400px;
+    border: 1px solid black;
+    margin-bottom:30px ;
+}
+#m_nav{
+   width: 1000px;
+
+}
+#inner_nav{
+    width: 100%;
+    margin-bottom: 30px;
+}
+#inner_nav>ul{
+    height: 24px;
+
+}
+#inner_nav>ul>li:first-child{
+    margin-left: 0;
+}
+#inner_nav>ul>li{
+    float: left;
+    margin-left: 30px;
+}
+#portfolio{
+   position: relative;
+   overflow: hidden;
+   margin-bottom: 50px;
+}
+#portfolio>#p1{
+    width: 230px;
+    float: left; 
+    margin-left: 26px;
+    margin-bottom: 40px;   
+}
+
+#portfolio>#p1:first-child{
+    margin-left: 0;
+}
+#portfolio>#p1:nth-child(4n+1){
+    margin-left: 0;
+}
+
+#portfolio>li>a{
+    width: 100%;   
+    display: block;
+    position: relative;
+}
+
+#number{
+    width: 1000px; 
+    text-align: center;
+}
+#number>a{
+    margin-left: 10px ;
+}
+footer{
+    width: 100%;
+    border-top: 1px solid black;
+    overflow: hidden;
+}
+#f_main{
+    width: 1000px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+#click{
+    width: 700px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+#click>li{
+    float: left;
+    margin-left: 40px;
+}
+#click>li:first-child{
+   margin-left: 0px;
+}
+#click>li>a{
+  font-size: 13px;
+    font-weight: bold;
+}
+#addr{
+    width: 80%;
+    float: left;
+
+}
+#addr>p{
+    font-weight:500;
+    line-height: 21px;
+}
+#sns{
+    float: right; 
+    position: relative;
+    bottom: 20px;
+}
+
+#sns>a{
+   
+    background: url(./img/facebook.svg)  no-repeat 0 0;
+    text-indent: -9999px;
+  
+}
