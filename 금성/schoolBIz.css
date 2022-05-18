@@ -5,6 +5,10 @@
 ul{
     list-style: none;
 }
+a{
+    text-decoration: none;
+    color:black
+}
 
 /* 헤더시작 */
 header{
@@ -52,6 +56,7 @@ overflow: hidden;
 
 
 /* 본문시작 */
+/* 교과서 시작 */
 contents{
     width: 100%;
     overflow: hidden;
@@ -60,6 +65,7 @@ contents{
 #Top_main{
     width: 100%;
     background: url(./img/top-banner-img-07.png);
+    border-bottom: 1px solid #e6e8ea;
 }
 #Top_inner{
     overflow: hidden;
@@ -81,18 +87,24 @@ contents{
     font-weight: bolder;
 }
 #nav{
-    width: 800px;
+    width: 100%;
+   
+    background-color: white;
+}
+#nav_inner{
+    width: 1200px;
     height: 70px;
     overflow: hidden;
     margin: 0 auto;
 }
 #content_nav{
     float: left;
+    
 }
 #content_nav>ul>li{
     float: left;
-    margin-right: 10px;
-    font-size: 20px;
+    margin-right: 50px;
+    font-size: 16px;
     position: relative;
     top:22px;
 }
@@ -100,6 +112,10 @@ contents{
     float: right;
     position: relative;
     top: 23px;
+    font-size: 11px;
+}
+#content_nav2>p>span{
+    margin:0 20px ;
 }
 #second_main{
     background:#4a82ee ;
@@ -341,6 +357,98 @@ contents{
 #fifth_inner_main>#second_inner>#text>p:nth-child(3){
    margin-top: 35px;
 }
+/* 교과서 끝 */
+
+/* 티칭허브 시작 */
+#intro_main{
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+#intro_main_inner{
+  width: 1200px;
+  height:430px;
+  margin: 70px auto;
+  border-radius: 5px;
+  background: url(./img/banner-img-3.png) no-repeat center;
+
+}
+#text_inner{
+width: 1000px;
+height: 150px;
+overflow: hidden;
+margin: 0 auto;
+position: relative;
+top: 50px;
+}
+#text_inner>#l_inner{
+  float: left;
+ ;
+  font-size: 30px;
+  font-weight: bold;
+
+}
+#text_inner>#r_inner{
+    float: right;
+    
+    font-size: 13px;
+    font-weight: bold;
+}
+#intro_main_inner>h1{
+    text-indent: -9999px;
+    background: url(./img/img-teach-hub.png) no-repeat center;
+    width: 200px;
+    height: 50px;
+    position: relative;
+    top: 200px;
+}
+#elementary{
+    background: #eaf4fe;  
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+}
+#elementary_inner{
+    width: 1200px;
+    height: 400px;
+    margin: 0 auto;
+}
+#elementary_inner>#nav{
+  width: 1200px;
+  height: 30px;
+  padding-top: 50px;
+  background: none;
+}
+#elementary_inner>#nav>p{
+    font-size: 35px;
+    font-weight: bold;
+
+}
+#elementary_inner>#nav>p>span{
+    color: #4a82ee;
+}
+#elementary_inner>#nav>p>a{
+  position: relative;
+ left: 870px;
+ font-size: 15px;
+ top:-10px;
+}
+#content{
+    width: 1200px;
+    height: 250px;
+    background: white;
+    border-radius: 15px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+#content_inner{
+    width: 1000px;    
+    margin: 20px auto;
+}
+
+/* 티칭허브 끝 */
 /* 본문 끝 */
 
 
