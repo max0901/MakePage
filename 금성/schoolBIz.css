@@ -444,11 +444,240 @@ top: 50px;
     overflow: hidden;
 }
 #content_inner{
-    width: 1000px;    
+    width: 800px;    
+    height: 250px;
     margin: 20px auto;
+    align-items: center;
+  
+}
+#prev{
+    background: url(./img/2931162_arrow_back_left_direction_move_icon\ \(1\).png)
+    no-repeat center;
+    text-indent: -9999px;
+    width: 100px;
+    height: 200px;
+    float: left;
+    position: relative;
+    top: 25px;
+    left: 50px;
+}
+#next{
+    background: url(./img/2931159_arrow_forward_right_move_navigation_icon.png)
+    no-repeat center;
+    text-indent: -9999px;
+    float: right;
+    width: 100px;
+    height: 200px;
+    position: relative;
+    bottom: 264px;
+    right: 50px;
+}
+#l_content{
+    float: left;
+   margin-top: 15px;
+}
+#l_content>p:first-child{
+    font-weight: bold;
+    font-size: 25px;
+}
+#l_content>p:nth-child(2){
+    font-size: 13px;
+    margin: 15px 0 30px 0;
+
+}
+#blue_box>span{
+    background-color: #4a82ee;
+    padding: 3px 5px;
+    font-size: 8px;
+    color: white;
+    border-radius: 2px;
+    margin-right: 5px;
+}
+#r_content{
+    float: right;
+    width: 400px;
+    height: 200px;
+    position: relative;
+    top: 0;
+
+}
+#content img{
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
 }
 
+#middle{
+    background: #ecf9f7;  
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+}
+#middle_inner{
+    width: 1200px;
+    height: 400px;
+    margin: 0 auto;
+}
+#middle_inner>#nav{
+  width: 1200px;
+  height: 30px;
+  padding-top: 50px;
+  background: none;
+}
+#middle_inner>#nav>p{
+    font-size: 35px;
+    font-weight: bold;
+
+}
+#middle_inner>#nav>p>span{
+    color:#00856d;
+}
+#middle_inner>#nav>p>a{
+  position: relative;
+ left: 830px;
+ font-size: 15px;
+ top:-10px;
+}
+
+#middle_inner>#content>#content_inner>#l_content{
+    float: right;
+}
+#middle_inner>#content>#content_inner>#r_content{
+    float: left;
+}
+#outro{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    padding: 90px 0 ;
+}
+#out_inner{
+    width: 1000px;
+    display: inline-block;
+    position: relative;
+}
+#l_out{
+    float: left;
+}
+
+#l_out>p:first-child>span{
+    color: #00856d;
+    font-size: 35px;
+    font-weight: bold;
+}
+#l_out>p:first-child{
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+}
+#l_out>p:nth-child(2){
+    font-size: 13px;
+    margin-top: 30px;
+    font-weight: 500;
+}
+#l_out>#button{
+    float: left;
+    font-size: 13px;
+    font-weight: lighter;
+    text-align: center;
+}
+#r_out{
+    float: right;
+}
+#r_out>img{
+    width: 500px;
+    height: 300px;
+}
 /* 티칭허브 끝 */
+
+/* 자습서시작 */
+#first_main{
+    width: 100%;
+    height: 350px;
+    background: url(./img/banner-img-2.png) no-repeat center;
+}
+#text_main{
+   width: 700px;
+   margin: 0 auto;
+   text-align: center;
+   position: relative;
+   top: 150px;
+}
+#text_main>p>span{
+    font-size: 35px;
+    font-weight: bold;
+    color: #4a82ee;
+    
+}
+#text_main>p{
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: black;
+    font-size: 21px;
+}
+#sub_main{
+    width: 100%;
+    height: 2300px;
+}
+#sub_main_inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+#sub_main_inner>#box{
+    width: 1200px;
+    height: 370px;
+    margin-top: 90px;
+    overflow: hidden;
+    border-bottom: 1px solid #e6e8ea;
+}
+#sub_main_inner>#box:last-child{
+    border-bottom: none;
+}
+#sub_main_inner>#box>#l_box{
+    float: left;
+    position: relative;
+    top: 50px;
+    
+}
+#sub_main_inner>#box>#l_box>#ele{
+    color:#ff8a33;
+}
+#sub_main_inner>#box>#l_box>p:nth-child(2){
+font-size: 35px;
+font-weight: bold;
+margin-bottom: 25px;
+}
+#sub_main_inner>#box>#l_box>#button{
+    text-align: center;
+    margin: 40px 0;
+    
+}
+#sub_main_inner>#box>#r_box{
+    float: right;
+}
+#sub_main_inner>#box:first-child>#r_box>img{
+    position: relative;
+    top: 0;
+}
+#sub_main_inner>#box>#r_box>img{
+    position: relative;
+    top: 100px;
+}
+#sub_main_inner>#box>#l_box>#middle{
+background: none;
+height: 21px;
+color: #2b66f6;
+}
+#sub_main_inner>#box>#l_box>#high{
+    color: #ff8a33;
+}
+/* 자습서 끝 */
 /* 본문 끝 */
 
 
