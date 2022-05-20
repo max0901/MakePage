@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:black
+}
+
+/* 헤더시작 */
+header{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    
+    overflow: hidden;
+}
+header>#h_inner{
+  margin: 0 40px;
+  height: 50px;
+}
+#h_inner>h1{
+    width: 150px;
+    background: url(./img/logo.1e48841.png) no-repeat center ;
+    text-indent: -9999px;
+    
+    position: absolute;
+    top: 12px;
+}
+#h_nav{
+width: 700px;
+margin: 0 auto;
+ height: 50px;
+overflow: hidden;
+}
+#h_nav>ul{
+    position: relative;
+    top: 22px;
+    overflow: hidden;
+}
+#h_nav>ul>li{
+  float: left;
+  margin-left: 60px;
+  color: black;
+}
+#last{
+  width: 100px;
+  position: absolute;
+  right: 20px;
+  top: 22px;
+}
+/* 헤더끝 */
+
+
+/* 본문시작 */
+
+contents{
+    width: 100%;
+    overflow: hidden;
+    
+}
+#Top_main{
+    width: 100%;
+    
+    border-bottom: 1px solid #e6e8ea;
+}
+#Top_inner{
+    overflow: hidden;
+    width: 1200px;
+    margin:0 auto;
+    height: 400px;
+    text-align: left;  
+}
+#Top_inner>span,h1{
+    position: relative;
+    top:150px;
+}
+#Top_inner>span{
+    font-weight: bold;
+    color: blue;   
+}
+#Top_inner>h1{
+    padding-top: 25px;
+    font-size: 40px;
+    font-weight: bolder;
+}
+#nav{
+    width: 100%;
+   
+    background-color: white;
+}
+#nav_inner{
+    width: 1200px;
+    height: 70px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+#content_nav{
+    float: left;
+    
+}
+#content_nav>ul>li{
+    float: left;
+    margin-right: 50px;
+    font-size: 16px;
+    position: relative;
+    top:22px;
+}
+#content_nav2{
+    float: right;
+    position: relative;
+    top: 23px;
+    font-size: 11px;
+}
+#content_nav2>p>span{
+    margin:0 20px ;
+}
+
+#top{
+    background: url(./img/career_banner.png) no-repeat center ;
+    background-size: cover;
+    width: 100%;
+    height:400px;
+}
+#top_inner{
+    width: 1200px;
+    margin:0 auto;
+}
+#boxing{
+    width: 1200px;
+    margin:0 auto;
+}
+#boxing>#box{
+    margin-top: 70px;
+    width: 1200px;
+    height: 300px;
+   
+}
+#box>#l_box{
+    float: left;
+    width:600px;
+    height: 200px;
+    
+}
+#l_box>h1{
+    position: relative;
+    top: 0;
+}
+#l_box>h1>span{
+    font-size: 15px;
+    color: #2b66f6;
+    font-weight: lighters;
+    position: absolute;
+    top: 0;
+}
+#box>#r_box{
+    float: right;
+}
