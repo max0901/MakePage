@@ -101,12 +101,19 @@ contents{
     float: left;
     
 }
+#content_nav>ul{
+    display: inline-block;
+}
 #content_nav>ul>li{
     float: left;
+    height: 47px;
     margin-right: 50px;
     font-size: 16px;
     position: relative;
     top:22px;
+}
+#content_nav>ul>.on{
+    border-bottom:1px solid black ;
 }
 #content_nav2{
     float: right;
