@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    
+}
+a:visited{
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+#header_menu{
+    width: 1200px;    
+    padding: 0.5em;
+    display: inline-block;
+    color: white;
+}
+#header_menu>a>img{
+   
+    text-indent: -9999px;
+    width: 68px;
+    height: 22px;
+    float: left;
+}
+#nav{
+    display:inline-block;
+    margin-left: 50px ;
+    float: left;
+}
+#nav>ul{
+    width: 700px;
+    display: flex;
+    justify-content:space-between;
+    float: left;
+   font-size: 15px;
+    color: white;
+}
+#nav2{
+    display: inline-block;
+    float: left;
+    margin-left: 10px;
+}
+#nav2>ul{
+    width: 300px;
+    float: right;
+    display: flex;
+    justify-content: space-around;
+}
+#nav2>ul>li>a>img{
+    width: 100%;
+    height: 18.5px;
+    margin-top: 4px;
+}
+#nav2>ul>li>button{
+    width:80px ;
+    height: 25px;
+    vertical-align: middle;
+}
+#container{
+    width: 100%;
+}
+#top_banner{
+    background: url(./img/ZeroProjectRiso_header2-1.png) no-repeat 50%;
+    height: 100vh;
+}
+#top_banner>#logo>img{
+    width: 200px;
+    height: 120px;
+   background-color: black;
+   position:absolute;
+   bottom: 150px;
+   left: 170px;
+
+}
+#top_banner>#top_text{
+    position: absolute;
+    right: 200px;
+    bottom: 300px;
+    font-size: 40px;
+    font-weight: bold;
+}
+#top_banner>#scroll{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}
+#top_banner>#scroll>p{
+    font-size: 16px;
+    font-weight: bold;
+    animation: bounce 2s 3;
+}
+#top_banner>#scroll>div{
+    margin-top: 20px;
+    height: 50px;
+    border-right: 2px solid black;
+    position: relative;
+    right: 40px;
+}
+#main{
+    width: 100%;
+    height: auto;
+  display: block;
+
+}
+#main_inner{
+    width:930px;
+    margin: 100px auto;
+    font-size: 25px;
+    font-weight: lighter;
+}
+#page_section{
+    width: 100%;
+    padding: 50px 0 100px 0;
+    border-top: 1px solid #D0D0D0;
+}
+#zero_1{
+    width: 1024px;
+    margin: 0 auto;
+}
+#title{
+ text-align: right;
+   width: 100%;
+   font-size: 20px;
+   font-weight: bold;
+}
+#zero_1>#slide{
+    float: left;
+    width: 600px;
+    margin: 70px 0 50px 100px;
+}
+#zero_1>#slide>img{
+    width:400px;
+    height: 350px;
+}
+#zero1_text{
+    clear: both;
+    font-size: 17px;
+    font-weight: 200;
+    margin-left: 100px
+
+}
+#zero1_text>h1{
+    margin-bottom: 30px;
+}
+#zero1_text>p>a{
+    position: relative;
+    left: 60px;
+
+}
+#zero1_text>p>a>span{
+  display: inline-block;
+  width: 100px;
+     border-top: 1px solid blue;
+     vertical-align: middle;
+     margin: 0 20px;
+}
+#r_img>img{
+    width: 300px;
+    height: 300px;
+    float: right;
+    position: relative;
+    bottom: 400px;
+}
+
+#zero_2{
+    width: 1024px;
+    margin: 0 auto;
+    
+}
+
+#zero2_inner{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#zero2_text{
+margin-left: 30px;   
+font-size: 17px;
+font-weight: 200;
+}
+#zero2_text>h1{
+    padding-bottom: 30px;
+}
+
+#r_slide>img{
+    width: 500px;
+    height: 300px;
+}
+
+#zero_3{
+    width: 1024px;
+    margin: 0 auto;
+}
+#top_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0 80px 0;
+    position: relative;
+    right: 120px
+}
+#top_img>img{
+    width: 600px;
+    height: 400px;
+}
+#zero3_text{
+    margin-left:20%;
+    font-size: 17px;
+    font-weight: 200;
+}
+
+footer{
+    width: 100%;
+    background-color: black;
+}
+#f_inner{
+    width: 1200px;
+   margin: 0 auto;
+   padding: 50px 0 20px;
+   
+    
+}
+#f_list{
+    width: 50%;
+    padding: 10px 10px;
+    display: block;
+    float: left;
+}
+#f_list>ul{
+    columns:3;
+    list-style: disc;
+}
+#f_list>ul>li{
+   margin-bottom: 20px;
+   font-size: 15px;
+}
+#f_link{
+    float: left;
+    display: flex;
+    justify-content: space-between;
+}
+#addr{
+    clear: both;
+    color: white;
+    width: 100%;
+    
+    font-size: 12px;
+    border-top: 1px solid white;
+}
