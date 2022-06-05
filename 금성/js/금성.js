@@ -1,3 +1,7 @@
+//쿼리셀렉을써서 나머지가 작동안하고 맨위에꺼만 작동된것
+//쿼리셀렉올을써서 나머지도 작동하게 만들것
+//js페이지 한페이지로 줄일것
+
 let slides = document.querySelector(".slides");
 let slideimg = document.querySelectorAll(".slides li");
 currentIdx = 0;
