@@ -1,7 +1,6 @@
-*{
+* {
   margin: 0;
   padding: 0;
-  
 }
 ul {
   list-style: none;
@@ -478,7 +477,7 @@ h1 {
   overflow: hidden;
   position: relative;
 }
-#prev {
+.prev {
   background: url(./img/293265_prev_backward_previous_icon.png) no-repeat center;
   text-indent: -9999px;
   width: 100px;
@@ -489,7 +488,7 @@ h1 {
   left: 50px;
   opacity: 0.4;
 }
-#next {
+.next {
   background: url(./img/293269_forward_skip_next_icon.png) no-repeat center;
   text-indent: -9999px;
   float: right;
@@ -512,9 +511,9 @@ h1 {
 .show_inner > li {
   display: flex;
   width: 800px;
-  margin:0 50px;
+  margin: 0 50px;
 }
-#hidden_content3_1>#r_content{
+#hidden_content3_1 > #r_content {
   margin-left: 50px;
 }
 #l_content > p:first-child {
