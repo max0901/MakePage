@@ -1,23 +1,30 @@
-let slides2 = document.querySelectorAll(".show_inner");
-let slideimg2 = document.querySelectorAll(".show_inner li");
-currentIdx2 = 0;
-slideCount2 = 4;
-prev2 = document.querySelectorAll(".slide_btn1 .prev");
-next2 = document.querySelectorAll(".slide_btn1 .next");
-slideWidth2 = 800;
-slideMargin2 = 100;
-for (let i = 0; i < slides2.length; i++) {
-  function moveSlide(num) {
-    slides2[i].style.left = -num * 900 + "px";
-    currentIdx2 = num;
-  }
-  prev2[i].addEventListener("click", function () {
-    if (currentIdx2 !== 0) moveSlide(currentIdx2 - 1);
-  });
+function sliderOn() {
+  const slides = document.querySelector(".slides"); // 슬라이드뼈대 감지
+  const Content = document.querySelector(".Thumbnail"); //썸네일 뼈대 감지
+  const item = slides.getElementsByClassName("slide_item"); // 슬라이드 아이템 획득
+  const thumbnail = Content.getElementsByClassName("thumbnail_item"); //썸네일 아이템 획득
 
-  next2[i].addEventListener("click", function () {
-    if (currentIdx2 !== slideCount2 - 1) {
-      moveSlide(currentIdx2 + 1);
+  const firstEle = item[0]; // 첫번째 슬라이드 아이템
+  const firstThumb = thumbnail[0]; // 첫번째 썸네일 아이템
+  firstEle.classList.add("ontheSlide"); //첫번째 슬라이드 아이템에 ontheSlide 클래스 추가
+  firstThumb.classList.add("ontheThumbnail"); // 첫번째 썸네일 아이템에 ontheThumbnail 클래스 추가
+  const gogogo = setInterval(sliderGo, 4000); // 4초마다 함수 sliderGo 함수 발동시키기
+  function sliderGo() {
+    const currentItem = document.querySelector(".ontheSlide"); // 현재 활성화된 슬라이드 아이템 감지
+    const currentThumb = document.querySelector(".ontheThumbnail"); // 현재 활성화된 썸네일 아이템 감지
+    currentItem.classList.remove("ontheSlide"); //현재 활성화된 슬라이드 아이템 비활성화
+    currentThumb.classList.remove("ontheThumbnail"); // 현재 활성화된 썸네일 아이템 비활성화
+
+    if (!currentItem.nextElementSibling) {
+      // 만약 마지막 슬라이드 아이템이라면
+      item[0].classList.add("ontheSlide"); //첫번째 아이템을 활성화
+      thumbnail[0].classList.add("ontheThumbnail"); // 첫번째 썸네일을 활성화
+    } else {
+      // 그 외의 경우
+      currentItem.nextElementSibling.classList.add("ontheSlide"); //다음 엘리먼트를 활성화
+      currentThumb.nextElementSibling.classList.add("ontheThumbnail"); //다음 썸네일을 활성화
     }
-  });
+  }
+  gogogo();
 }
+sliderOn();
