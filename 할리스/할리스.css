@@ -54,9 +54,8 @@ header {
   justify-content: space-around;
   font-weight: 900;
 }
-.bottomNav_inner li{
+.bottomNav_inner li {
   color: black;
-
 }
 .bottomNav_inner span {
   font-size: 12px;
@@ -75,7 +74,7 @@ header {
   width: 100%;
   height: 279px;
   background: url(./img/bg_2depth.gif);
-visibility: hidden;
+  visibility: hidden;
   position: absolute;
   transition: all 1s ease;
   opacity: 0;
@@ -87,7 +86,7 @@ visibility: hidden;
 #inner {
   width: 940px;
   display: flex;
- justify-content: space-around;
+  justify-content: space-around;
   font-size: 13px;
   text-align: center;
 }
@@ -98,7 +97,7 @@ visibility: hidden;
   color: #808080;
 }
 .bottomNav:hover #inner {
-display: block;
+  display: block;
 }
 #faq {
   top: 30px;
@@ -109,23 +108,25 @@ display: block;
   width: 100%;
   position: relative;
 }
-.main1{
+.main1 {
   width: 100%;
   height: 480px;
   position: relative;
 }
-.main1>ul>li{
+.main1 > ul > li {
   position: absolute;
   width: 100%;
   height: 480px;
   opacity: 0;
-  transition:all 5s ;
+  transition: all 5s;
 }
-.on{
+.on {
   opacity: 1;
-  transition: all 5s ;
+  transition: all 5s;
 }
-
+.onslide {
+  display: none;
+}
 .main2 {
   width: 960px;
   margin: 0 auto;
