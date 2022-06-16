@@ -1,73 +1,43 @@
 let slides = document.querySelector(".slides");
 let slideimg = document.querySelectorAll(".slides li");
-currentIdx = 0;
-slideCount = slideimg.length;
-prev = document.querySelector(".controller>.prev");
-next = document.querySelector(".controller>.next");
-slideWidth = 150;
-slideMargin = 400;
-making();
-init();
 
-function making() {
-  for (let i = 0; i < slideCount; i++) {
-    let copy = slideimg[i].cloneNode(true);
-    slides.append(copy);
-    if (i == slideCount - 1) {
-      let last = slides.lastElementChild.cloneNode(true);
-      slides.insertBefore(last, slides.firstElementChild);
-    }
-  }
-}
-function init() {
-  slides.style.width = (slideWidth + slideMargin) * (slideCount - 1) + "px";
+let prev_btn = document.querySelector(".controller>.prev");
+let next_btn = document.querySelector(".controller>.next");
 
-  slides.style.left = -(slideWidth + slideMargin) + "px";
-}
-let stop;
+let cnt1 = 0;
+let margin1 = 50;
+let size1 = 100;
 
-function moving() {
-  slides.style.left = -(currentIdx + 2) * (slideWidth + slideMargin) + "px";
-  slides.style.transition = `${0.5}s ease-out`;
-
-  currentIdx++;
-  if (currentIdx > slideCount) {
-    currentIdx = 1;
-  }
-  stop = setTimeout(moving, 1000);
-}
-
-function stop() {
-  clearTimeout(stop);
-}
-moving();
-
-// next.addEventListener("click", function () {
-//   if (currentIdx <= slideCount - 1) {
-//     slides.style.left = -(currentIdx + 2) * (slideWidth + slideMargin) + "px";
-//     slides.style.transition = `${0.5}s ease-out`;
+// next_btn.addEventListener("click", () => {
+//   if (cnt1 < slideimg.length - 1) {
+//     cnt1++;
+//     slides.style.transform = "translateX(" + -(size1 + margin1) * cnt1 + "px)";
+//   } else if (cnt1 === slideimg.length - 1) {
+//     cnt1 = 0;
+//     slides.style.transform = "translateX(" + -(size1 + margin1) * cnt1 + "px)";
 //   }
-//   if (currentIdx === slideCount - 1) {
-//     setTimeout(function () {
-//       slides.style.left = -(slideWidth + slideMargin) + "px";
-//       slides.style.transition = `${0}s `;
-//     }, 500);
-//     currentIdx = -1;
+// });
+// prev_btn.addEventListener("click", () => {
+//   if (cnt1 > 0) {
+//     cnt1--;
+//     slides.style.transform = "translateX(" + -(size1 + margin1) * cnt1 + "px)";
+//   } else if (cnt1 === 0) {
+//     cnt1 = slideimg.length - 1;
+//     slides.style.transform = "translateX(" + -(size1 + margin1) * cnt1 + "px)";
 //   }
-//   currentIdx += 1;
 // });
 
-// prev.addEventListener("click", function () {
-//   if (currentIdx >= 0) {
-//     slides.style.left = -currentIdx * (slideWidth + slideMargin) + "px";
-//     slides.style.transition = `${0.5}s ease-out`;
-//   }
-//   if (currentIdx === 0) {
-//     setTimeout(function () {
-//       slides.style.left = -slideCount * (slideWidth + slideMargin) + "px";
-//       slides.style.transition = `${0}s ease-out`;
-//     }, 500);
-//     currentIdx = slideCount;
-//   }
-//   currentIdx -= 1;
-// });
+setInterval(() => {
+  if (cnt1 < slideimg.length - 1) {
+    cnt1++;
+    slides.style.transform = "translateX(" + -(size1 + margin1) * cnt1 + "px)";
+  } else if (cnt1 === slideimg.length - 1) {
+    clone();
+    // cnt1 = 0;
+    // slides.style.transform = "translateX(" + -(size1 + margin1) * cnt1 + "px)";
+  }
+}, 500);
+let clone = () => {
+  slides.append(slideimg[i].cloneNode(true));
+  // setTranslate({ reset: true });
+};

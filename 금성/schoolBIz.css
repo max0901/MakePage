@@ -251,8 +251,8 @@ h1 {
   top: 0;
   display: flex;
   justify-content: center;
-  width: 2500px;
-  transition: 0.5s ease-out;
+  width: 100%;
+  transition: all 1s;
 }
 .slides li {
   display: inline-block;
@@ -503,7 +503,7 @@ h1 {
   width: 4000px;
   display: flex;
   position: absolute;
-  transition: left 0.5s ease-out;
+  transition: all 1s;
   top: 0;
   left: 0;
 }
