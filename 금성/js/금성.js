@@ -30,14 +30,20 @@ let size1 = 100;
 setInterval(() => {
   if (cnt1 < slideimg.length - 1) {
     cnt1++;
+    slides.style.transition = "all 1s";
     slides.style.transform = "translateX(" + -(size1 + margin1) * cnt1 + "px)";
+    for (let i = 0; i < slideimg.length - 1; i++) {
+      clone(i);
+    }
   } else if (cnt1 === slideimg.length - 1) {
-    clone();
-    // cnt1 = 0;
-    // slides.style.transform = "translateX(" + -(size1 + margin1) * cnt1 + "px)";
+    setTimeout(function () {
+      slides.style.transition = "0s";
+      cnt1 = 0;
+      slides.style.transform =
+        "translateX(" + -(size1 + margin1) * cnt1 + "px)";
+    });
   }
 }, 500);
-let clone = () => {
+let clone = (i) => {
   slides.append(slideimg[i].cloneNode(true));
-  // setTranslate({ reset: true });
 };
