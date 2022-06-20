@@ -20,11 +20,11 @@ for (let i = 0; i < nav.length; i++) {
 }
 
 const slider = document.querySelector(".main1");
+const sliderLi = document.querySelectorAll(".main1 ul li");
+const firstLi = sliderLi[0];
 function slideOn() {
-  const sliderLi = document.querySelectorAll(".main1 li");
-  const firstLi = sliderLi[0];
-  const gogogo = setInterval(sliderGo, 4000);
   firstLi.classList.add("on");
+  setInterval(sliderGo, 6000);
 
   function sliderGo() {
     const onslide = document.querySelector(".on");
