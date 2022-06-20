@@ -5,8 +5,8 @@ let prev_btn = document.querySelector(".controller>.prev");
 let next_btn = document.querySelector(".controller>.next");
 
 let cnt1 = 0;
-let margin1 = 50;
-let size1 = 100;
+let margin1 = 5;
+let size1 = 50;
 
 // next_btn.addEventListener("click", () => {
 //   if (cnt1 < slideimg.length - 1) {
@@ -28,22 +28,21 @@ let size1 = 100;
 // });
 
 setInterval(() => {
-  if (cnt1 < slideimg.length - 1) {
+  if (cnt1 < 1000) {
     cnt1++;
-    slides.style.transition = "all 1s";
+    slides.style.transition = "all 4s";
     slides.style.transform = "translateX(" + -(size1 + margin1) * cnt1 + "px)";
-    for (let i = 0; i < slideimg.length - 1; i++) {
-      clone(i);
-    }
   } else if (cnt1 === slideimg.length - 1) {
     setTimeout(function () {
-      slides.style.transition = "0s";
+      slides.style.transition = "all 4s";
       cnt1 = 0;
       slides.style.transform =
         "translateX(" + -(size1 + margin1) * cnt1 + "px)";
-    });
+    }, 0);
   }
 }, 500);
-let clone = (i) => {
-  slides.append(slideimg[i].cloneNode(true));
-};
+setInterval(() => {
+  for (let i = 0; i < 11; i++) {
+    slides.append(slideimg[i].cloneNode(true));
+  }
+}, 3500);

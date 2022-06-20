@@ -233,7 +233,7 @@ h1 {
 }
 #slide {
   clear: both;
-  width: 1600px;
+  width: 100%;
 
   height: 250px;
   overflow: hidden;
@@ -252,7 +252,6 @@ h1 {
   display: flex;
   justify-content: center;
   width: 100%;
-  transition: all 1s;
 }
 .slides li {
   display: inline-block;
