@@ -54,15 +54,24 @@ nav ul li {
 #hide3,
 #hide4,
 .hide_language {
+  background-color: aqua;
+  color: white;
   display: none;
 }
 
-/* aside {
-  width: 50px;
+article {
   height: 100%;
+  display: inline-block;
+}
+aside {
+  width: 100px;
+  height: 100vh;
   float: right;
   background: url(./img/gnb_brand_menu_2.png) no-repeat;
-} */
+  position: fixed;
+  background-color: #292929;
+  right: 0px;
+}
 #container {
   width: 100%;
 }
@@ -189,16 +198,97 @@ footer {
 }
 #footer_inner {
   width: 1075px;
+  display: flex;
   margin: 0 auto;
+  justify-content: space-between;
+  padding: 50px 0 80px 0;
 }
 #footer_inner ul {
+  float: left;
+  padding-left: 30px;
+}
+#footer_inner ul div {
   float: left;
   padding-left: 30px;
 }
 #footer_inner ul h1 {
   font-size: 20px;
   font-weight: 200;
+  text-align: center;
+  padding-bottom: 30px;
 }
 #footer_inner ul li {
   text-align: center;
+  padding-bottom: 10px;
+}
+#footer_inner ul li a {
+  color: #7777;
+}
+#footer_inner2 {
+  clear: both;
+  width: 100%;
+  display: inline-block;
+  border: 1px solid #7777;
+  border-width: 1px 0;
+  margin-bottom: 30px;
+}
+#footer2_in {
+  width: 1075px;
+  margin: 0 auto;
+}
+#footer2_in ul {
+  display: inline-block;
+  border-right: 1px solid #777;
+}
+#footer2_in ul li {
+  float: left;
+  padding: 10px;
+}
+#footer2_in ul li:first-child {
+  padding-left: 0px;
+}
+#footer2_in ul li a {
+  color: #7777;
+  font-size: 11.5px;
+  height: 40px;
+  line-height: 40px;
+}
+#footer2_in .box {
+  width: 160px;
+  float: right;
+  line-height: 65px;
+  background: url(./img/bu_familysite.png) no-repeat 120px 50%;
+  font-size: 12px;
+  transition: all 0.2s ease;
+}
+
+#last {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 70px;
+  line-height: 40px;
+  font-size: 11.5px;
+  color: #7777;
+}
+#footer2_in .box .hidden_nav ul li {
+  clear: both;
+  padding: 5px 0;
+  text-align: center;
+  margin-right: 0;
+  line-height: 10px;
+}
+.hidden_nav {
+  display: none;
+
+  height: 500px;
+  width: 160px;
+}
+.hidden_nav ul {
+  transition: all 0.2s ease 0.5s;
+}
+
+.box:hover .hidden_nav {
+  display: block;
 }
