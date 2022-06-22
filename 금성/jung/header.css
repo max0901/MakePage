@@ -1,0 +1,78 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 3rem;
+  background-color: #001;
+  color: aliceblue;
+  font: 16rem;
+  cursor: pointer;
+  position: fixed;
+  z-index: 1000;
+}
+
+#con {
+  margin: 0 auto;
+  width: 100%;
+  height: 30px;
+  justify-content: space-evenly;
+  display: flex;
+  font-size: 14px;
+  text-align: center;
+  overflow: hidden;
+}
+#hide {
+  display: none;
+  background-color: black;
+  height: 100px;
+  padding-top: 50px;
+}
+#hide_inner {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+}
+#con:hover + #hide {
+  display: block;
+  height: 100px;
+}
+li,
+ol,
+ul {
+  list-style: none;
+}
+section {
+  width: 100%;
+  height: 80vh;
+}
+body {
+  color: #555;
+  font-size: 14px;
+  font-family: "Noto Sans KR";
+  -webkit-font-smoothing: antialiased;
+}
+
+footer {
+  width: 100%;
+  background: #f4f4f5;
+  padding: 50px 42px 84px;
+  letter-spacing: 0.1px;
+  display: flex;
+  justify-content: left;
+  position: relative;
+}
+
+.sns {
+  background: url(/IMG/ico-blog.png) 50% 50%/100% no-repeat;
+}
+
+footer > p {
+  text-align: left;
+}
