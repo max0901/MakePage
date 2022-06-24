@@ -24,46 +24,83 @@ header {
 }
 nav {
   width: 100%;
-  margin: 0 auto;
   text-align: center;
   display: inline-block;
+  font-size: 15px;
 }
 nav > ul {
   display: flex;
   justify-content: center;
   position: relative;
-  top: 10px;
+  top: 13px;
 }
 nav > ul li {
-  padding-left: 50px;
+  padding-right: 100px;
+  width: 160px;
+  display: inline-block;
 }
-nav > ul li a {
+nav ul li a {
   color: white;
+}
+.on a {
+  transition: all 0.5s;
+  color: #747474;
+}
+.hide1,
+.hide2 {
+  background-color: white;
+  width: 180px;
+  position: relative;
+  top: 15px;
+  /* display: none; */
+  transition: all 1s;
+}
+.hide1 li {
+  display: inline-block;
+  padding: 10px;
+  text-align: left;
+}
+.hide1 li a {
+  color: black;
+}
+
+.hide2 li {
+  padding: 10px;
+  text-align: left;
+}
+.hide2 li a {
+  color: black;
+}
+.hide2 li a img {
+  width: 20px;
+  height: 20px;
+  float: right;
+}
+.hide_inner1,
+.hide_inner2 {
+  position: relative;
+  background-color: white;
+  left: 100%;
 }
 #login {
   float: right;
-  width: 80px;
   position: relative;
-  top: -15px;
-  margin-right: 30px;
+  top: -10px;
 }
 #login ul {
   display: flex;
+  width: 100px;
   justify-content: space-between;
+  margin-right: 100px;
 }
 #login ul li a {
-  color: white;
-}
-#login ul li:first-child {
-  position: relative;
-  top: 10px;
   font-size: 12px;
 }
-
 #login ul li a img {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
 }
+
 #banner img {
   width: 100%;
 }
