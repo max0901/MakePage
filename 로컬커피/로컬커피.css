@@ -52,12 +52,13 @@ nav ul li a {
   width: 180px;
   position: relative;
   top: 15px;
-  /* display: none; */
+  display: none;
   transition: all 1s;
 }
 .hide1 li {
   display: inline-block;
-  padding: 10px;
+  padding: 10px 20px;
+  width: 100%;
   text-align: left;
 }
 .hide1 li a {
@@ -65,7 +66,9 @@ nav ul li a {
 }
 
 .hide2 li {
-  padding: 10px;
+  padding: 10px 20px;
+  height: 50px;
+  width: 100%;
   text-align: left;
 }
 .hide2 li a {
@@ -78,14 +81,20 @@ nav ul li a {
 }
 .hide_inner1,
 .hide_inner2 {
-  position: relative;
+  display: none;
+  position: absolute;
+  left: 181px;
+  top: 0px;
+  width: 100%;
   background-color: white;
-  left: 100%;
+}
+.hide_inner2 {
+  top: 50px;
 }
 #login {
-  float: right;
-  position: relative;
-  top: -10px;
+  position: absolute;
+  top: 13px;
+  right: 0;
 }
 #login ul {
   display: flex;
@@ -99,6 +108,7 @@ nav ul li a {
 #login ul li a img {
   width: 20px;
   height: 20px;
+  color: white;
 }
 
 #banner img {

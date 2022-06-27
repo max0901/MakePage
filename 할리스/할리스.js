@@ -5,14 +5,14 @@ let hidden = document.querySelector("#hidden");
 for (let i = 0; i < nav.length; i++) {
   nav[i].addEventListener("mouseover", function () {
     hidden.style.visibility = "visible";
-    hidden.style.opacity = "1";
+    hidden.style.display = "block";
     nav[i].style.color = "white";
     nav[i].style.backgroundColor = "red";
     navIn[i].style.color = "white";
   });
   nav[i].addEventListener("mouseout", function () {
     hidden.style.visibility = "hidden";
-    hidden.style.opacity = "0";
+    hidden.style.display = "none";
     nav[i].style.color = "black";
     nav[i].style.backgroundColor = "white";
     navIn[i].style.color = "black";
