@@ -20,6 +20,7 @@ header {
   width: 100%;
   height: 3rem;
   background-color: rgba(0, 0, 0, 0.3);
+
   position: fixed;
 }
 nav {
@@ -201,6 +202,8 @@ section > div > .hr2 {
 }
 #whol_inner ul li img {
   width: 450px;
+  z-index: -1;
+  position: relative;
 }
 #whol_inner ul li h2 {
   padding: 30px 0;
@@ -218,6 +221,7 @@ section > div > .hr2 {
   position: relative;
   left: 620px;
   margin-bottom: 150px;
+  transition: all 0.5s;
 }
 /* 홀섹션끝 */
 
@@ -270,6 +274,24 @@ section > div > .hr2 {
 #img_inner input {
   width: 100px;
   margin: 30px 0 80px;
+}
+.hide_tag {
+  background-color: black;
+  opacity: 0.5;
+  width: 270px;
+  height: 200px;
+  position: relative;
+  top: -205px;
+  transition: all 1s;
+  display: none;
+}
+.hide_tag > span {
+  position: relative;
+  top: 90px;
+  left: 30px;
+  color: white;
+  font-size: 13px;
+  opacity: 1;
 }
 /* 인스타그램끝 */
 
