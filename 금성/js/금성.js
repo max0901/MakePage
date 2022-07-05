@@ -1,5 +1,6 @@
 let slides = document.querySelector(".slides");
 let slideimg = document.querySelectorAll(".slides li");
+let slideBox = document.querySelector(".slide");
 
 let prev_btn = document.querySelector(".controller>.prev");
 let next_btn = document.querySelector(".controller>.next");
@@ -42,7 +43,8 @@ setInterval(() => {
   }
 }, 500);
 setInterval(() => {
-  for (let i = 0; i < 11; i++) {
+  for (let i = 0; i < 13; i++) {
     slides.append(slideimg[i].cloneNode(true));
+    slideimg[i].remove();
   }
-}, 3500);
+}, 3000);
