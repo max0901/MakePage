@@ -1,13 +1,14 @@
 import "./App.css";
-import Com1 from "./componenet/compo1";
 
+import Funk from "./componenet/Funk";
+import Comp from "./componenet/Comp";
 function App() {
   return (
-    <div className="App">
-      <Com1 />
+    <div className="constainer">
       Movie-Project
+      <Funk initNumber={2} />
+      <Comp initNumber={2} />
     </div>
   );
 }
-
 export default App;
