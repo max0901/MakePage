@@ -28,7 +28,6 @@ let size1 = 50;
 //   }
 // });
 
-<<<<<<< HEAD
 // 첫번쨰
 // setInterval(() => {
 //   if (cnt1 < 1000) {
@@ -69,7 +68,9 @@ setInterval(() => {
         slides1[i].style.transform =
           "translateX(" + -(size1 + margin1) * cnt1 + "px)";
       }
-=======
+    });
+  }
+});
 setInterval(() => {
   if (cnt1 < 1000) {
     cnt1++;
@@ -81,19 +82,16 @@ setInterval(() => {
       cnt1 = 0;
       slides.style.transform =
         "translateX(" + -(size1 + margin1) * cnt1 + "px)";
->>>>>>> bdbe8dcd42337927ba4eeceaf17237b62a840109
     }, 0);
   }
 }, 500);
 setInterval(() => {
   for (let i = 0; i < 13; i++) {
-<<<<<<< HEAD
     // slides.append(slideimg[i].cloneNode(true));
     slideBox.append(slides1[i].cloneNode(true));
     slides1[i].remove();
-=======
+
     slides.append(slideimg[i].cloneNode(true));
     slideimg[i].remove();
->>>>>>> bdbe8dcd42337927ba4eeceaf17237b62a840109
   }
 }, 3000);
